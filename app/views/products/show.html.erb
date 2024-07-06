@@ -10,6 +10,5 @@
   <%= link_to "Back to products", products_path, class: "btn btn-primary" %>
 </div>
 </br>
-  <%= button_to "Destroy this product", @product, method: :delete %>
-
+  <%= link_to "Destroy this product", @product, data: { turbo_method: :delete}, class: "btn btn-danger" %> 
 </div>
