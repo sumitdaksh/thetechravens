@@ -1,0 +1,7 @@
+# frozen_string_literal: true
+
+FIXNUM_MAX = (2**(0.size * 4 -2) -1)*2 +1 # 2147483647
+INTEGER_DEFAULT = 0
+DECIMAL_MAX = 9999999999999999.99
+STRING_MIN = 2
+STRING_MAX = 100

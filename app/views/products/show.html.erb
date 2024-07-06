@@ -1,0 +1,15 @@
+<div class="col-sm-6 offset-sm-4">
+<h1>Showing product</h1>
+<p style="color: green"><%= notice %></p>
+<p style="color: red"><%= alert %></p>
+
+<%= render @product %>
+
+<div>
+  <%= link_to "Edit this product", edit_product_path(@product), class: "btn btn-primary" %> 
+  <%= link_to "Back to products", products_path, class: "btn btn-primary" %>
+</div>
+</br>
+  <%= button_to "Destroy this product", @product, method: :delete %>
+
+</div>
