@@ -5,20 +5,45 @@ Rails project with RSpec
 
 ## Setup Instructions
 
-1. **Clone the repository:**
+
+1. **Install RVM (Ruby Version Manager)**
+
+    If you don't have RVM installed, install it using the following commands:
+
+    ```sh
+    \curl -sSL https://get.rvm.io | bash -s stable
+    source ~/.rvm/scripts/rvm
+    ```
+2. **Install Ruby 3.3.0**
+
+    Use RVM to install Ruby 3.3.0:
+    ```
+    rvm install 3.3.0
+    rvm use 3.3.0 --default
+    ```
+
+3. **Install Rails 7.1.3.4**
+
+    Install the specified version of Rails:
+    ```
+    gem install rails -v 7.1.3.4
+    ```
+
+
+4. **Clone the repository:**
 
     ```sh
     git clone <repository_url>
     cd thetechravens
     ```
 
-2. **Install dependencies:**
+5. **Install dependencies:**
 
     ```sh
     bundle install
     ```
 
-3. **Set up the database:**
+6. **Set up the database:**
 
     Ensure MySQL is installed and running on your local machine. Set up a MySQL user with the following credentials:
 
@@ -29,14 +54,14 @@ Rails project with RSpec
 
     Update the `config/database.yml` file with the MySQL configuration if necessary.
 
-4. **Create and migrate the database:**
+7. **Create and migrate the database:**
 
     ```sh
     rails db:create
     rails db:migrate
     ```
 
-5. **Run the application:**
+8. **Run the application:**
 
     ```sh
     rails s
@@ -44,7 +69,7 @@ Rails project with RSpec
 
     Open your web browser and go to `http://localhost:3000` to view the application.
 
-6. **Run RSpec tests:**
+9. **Run RSpec tests:**
 
     To run the RSpec tests, use the following commands:
 
